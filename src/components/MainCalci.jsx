@@ -66,7 +66,8 @@ const MainCalci = ({ data }) => {
         Free Crypto Tax Calculator Australia
       </h1>
       <div>
-        <div>
+      <div className="md:flex justify-around md:mb-4">
+        <div className="bg-[#EFF2F5] py-3 px-2 rounded-md md:min-w-[335px] ">
           <label htmlFor="financialYear">Financial Year</label>
           <select
             name="financialYear"
@@ -77,7 +78,7 @@ const MainCalci = ({ data }) => {
           </select>
         </div>
 
-        <div>
+        <div className="bg-[#EFF2F5] py-3 px-2 rounded-md md:min-w-[335px] ">
           <label htmlFor="country">Country</label>
           <select
             name="country"
@@ -91,6 +92,7 @@ const MainCalci = ({ data }) => {
               </div>
             </option>
           </select>
+        </div>
         </div>
 
         {/* enter purchase and sales cols */}
